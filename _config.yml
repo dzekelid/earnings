@@ -4,7 +4,7 @@ url: earnings.streamdata.gallery
 tag: Earnings
 markdown: kramdown
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", ".DS_Store"]
-github_user: streamdata-gallery
+github_user: streamdata-gallery-topics
 github_repo: earnings
 github_branch: master
 collections:
