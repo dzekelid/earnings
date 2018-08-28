@@ -1,24 +1,27 @@
 ---
 swagger: "2.0"
+x-collection-name: IEX
+x-complete: 0
 info:
   title: IEX Trading API Earnings
   description: Pulls data from the four most recent reported quarters.
   termsOfService: https://iextrading.com/api-terms/
   version: 1.0.0
-host: api.iextrading.com
-basePath: /1.0
 schemes:
 - http
 produces:
 - application/json
 consumes:
 - application/json
+host: api.iextrading.com
+basePath: /1.0
 paths:
   /stock/{symbol}/earnings:
     get:
       summary: Earnings
-      description: Pulls data from the four most recent reported quarters
+      description: Pulls data from the four most recent reported quarters.
       operationId: earnings
+      x-api-path-slug: stocksymbolearnings-get
       parameters:
       - in: path
         name: symbol
@@ -29,10 +32,8 @@ paths:
         200:
           description: OK
       tags:
-      - market data
-      - earnings
-definitions: []
-x-collection-name: IEX
+      - Market Data
+      - Earnings
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0
